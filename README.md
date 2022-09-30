@@ -49,4 +49,25 @@ componentDidMount() {
       this.getMovies();
 }
 <!-- 22-09-30 -->
-<!-- #12.2부터! -->
+18. css 파일을 만든 뒤 각각의 필요한 파일에서 import해와서 쓰는게 좋다.
+ex) import "./Movie.css"
+19. clas => className
+20. for => htmlFor
+21. map에 있는 각각 item은 key가 필요하다.
+-map은 현재의 item, 그리고 item number를 제공한다.
+22. slice() = 시작점과 끝점을 입력하면 그만큼의 string을 제공한다.
+ex) summary.slice(0, 10)
+23. 두개의 컴포넌트가 동시에 렌더링 되는것을 막는 법 = exact={true}를 첫번째 route에 추가해준다.
+24. Link는 Router 밖에서 쓸 수 없다.
+25. Router에 있는 모든 Route들은 props를 가진다. 이 props는 사용할 수 있다.
+26. Link to=""를 사용할 때 to를 object로 변경할 수 있다.
+ex) Link to={{
+      pathname:"/about",
+      state: {
+            year.
+            title,
+            summary,
+            poster,
+            genres
+      }
+}}
